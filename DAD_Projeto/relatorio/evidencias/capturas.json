@@ -1,0 +1,106 @@
+{
+  "ranking.png": {
+    "origem": "docs/previews/ranking.png",
+    "sha256": "1f12239d45c69f2fb101688c0db6c8eb81875451d48ac2c5493fc65a1fff78c6"
+  },
+  "torneio-mobile.png": {
+    "origem": "docs/previews/torneio-mobile.png",
+    "sha256": "1cf07e1ff492403f514bdd549560d66a84d37c631399362455d9007db12242f1"
+  },
+  "torneios-perfil.png": {
+    "origem": "docs/previews/torneios-perfil.png",
+    "sha256": "3ac37066f827b458a865d653b0191acd50c384b23339f2446a7499d8f028cc98"
+  },
+  "editar-utilizador-telemovel.png": {
+    "origem": "docs/previews/editar-utilizador-telemovel.png",
+    "sha256": "74a3616d9d49d0c4217993d167e53b2675fffb1fad8c1d1e640438e1ac60cd1d"
+  },
+  "login.png": {
+    "origem": "docs/previews/login.png",
+    "sha256": "0f6f7efb59d54283d27d8dabbb7c9c70606ba5f01a0e811b8f217fe3aa89ec15"
+  },
+  "administracao.png": {
+    "origem": "docs/previews/administracao.png",
+    "sha256": "e87a25a8a048ba542e77208a17356ddbc3ba88e07043ee75d7303f49d81fd966"
+  },
+  "historico-jogador.png": {
+    "origem": "docs/previews/historico-jogador.png",
+    "sha256": "f31ba2bff755b4ab504f52be523a7bf37df13ef72aecc94356f22310347eaaba"
+  },
+  "seguranca.png": {
+    "origem": "docs/previews/seguranca.png",
+    "sha256": "e6c37e3b34cbebc9d2eb467dbda996cd1871cdaa495bfbf9fda39df4e39bdbc2"
+  },
+  "perfil-telemovel.png": {
+    "origem": "docs/previews/perfil-telemovel.png",
+    "sha256": "cddfa505ff59e3ac59577be56da3448522d3d83de4a43b1edcdebe9e1a6ae68c"
+  },
+  "historico.png": {
+    "origem": "docs/previews/historico.png",
+    "sha256": "fe15600bfbd708cb96ccdbd951320f8e91dd5a96df28bee00722025d7cee66df"
+  },
+  "convite-link-corrigido.png": {
+    "origem": "docs/previews/convite-link-corrigido.png",
+    "sha256": "489b7f47a6242208c2ad8f34cf690b9dbdd99f15598edf5d97e94fa40e60b9aa"
+  },
+  "torneios-admin.png": {
+    "origem": "docs/previews/torneios-admin.png",
+    "sha256": "cdbcf62adc2c2ed0cee7a81b2d0e0471db38d588171bbc58941d1eb084640d7a"
+  },
+  "ranking-mobile.png": {
+    "origem": "docs/previews/ranking-mobile.png",
+    "sha256": "837b06d4c6353876fce4d05527178daad1fcae696da7eb89d9a78d9dd8570002"
+  },
+  "resultado-jogo.png": {
+    "origem": "docs/previews/resultado-jogo.png",
+    "sha256": "dd9042191f858444585d7dd0c0ab3dac69b942d2735679c9317739f160f7ced7"
+  },
+  "carteira.png": {
+    "origem": "docs/previews/carteira.png",
+    "sha256": "c93aee6a9e06593eb9a15176cb36fdf78611237eb4ac643915ec5ce34f5d740b"
+  },
+  "torneio.png": {
+    "origem": "docs/previews/torneio.png",
+    "sha256": "7b4d6256d7c877c3cdac48d211e5b345fa16dee110d604fd6c96920e994760ee"
+  },
+  "partida-local-telemovel.png": {
+    "origem": "docs/previews/partida-local-telemovel.png",
+    "sha256": "3703af5d59181f41708ca994e12c1d80bbef80b6e14c4e87819ebee1ab7405a3"
+  },
+  "partida-online.png": {
+    "origem": "docs/previews/partida-online.png",
+    "sha256": "f6d4a12f1983bb63065c8f1e761b489412487ca8e5f050eec8eb92ff4c4c5ea6"
+  },
+  "relogios-partida.png": {
+    "origem": "docs/previews/relogios-partida.png",
+    "sha256": "77d0de294e48c71d423f7b10725657851aef7887fa49e226ae3ac1d19f429e26"
+  },
+  "registo-telemovel.png": {
+    "origem": "docs/previews/registo-telemovel.png",
+    "sha256": "030cda1f7ad3bb69ed054c761dcd6141dadc41d447cc93bbbee118ecd61f2ec3"
+  },
+  "rank-perfil.png": {
+    "origem": "docs/previews/rank-perfil.png",
+    "sha256": "e41edeae160b0373690326f9078ac373e7bd07ecd4a63ad75c975b7d32ae9f25"
+  },
+  "partida-online-telemovel.png": {
+    "origem": "docs/previews/partida-online-telemovel.png",
+    "sha256": "915423a30e8e84663cf511ed19da91d7b797ff83e84547c2ed90d0d02cfa2f40"
+  },
+  "perfil.png": {
+    "origem": "docs/previews/perfil.png",
+    "sha256": "c387f1e93404c7a3a6e51830835337cf64dd94510d35aa4717af245607e00acc"
+  },
+  "partida-local.png": {
+    "origem": "docs/previews/partida-local.png",
+    "sha256": "cb59953750831e7d57d6d6c9771c017d1755269085a11cb20b1b4f09ca940e1b"
+  },
+  "historico-jogador-telemovel.png": {
+    "origem": "docs/previews/historico-jogador-telemovel.png",
+    "sha256": "863b33d91815698ee20600c355b7b3644c732254e1b5140ca0c362f792913e02"
+  },
+  "recuperar-conta.png": {
+    "origem": "docs/previews/recuperar-conta.png",
+    "sha256": "db96b7491ac21a41772b5a08c526e4201447dc6871a1647637c3d5238c8d1583"
+  }
+}

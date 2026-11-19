@@ -1,0 +1,103 @@
+{
+    "installed": [
+        {
+            "name": "fakerphp/faker",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/FakerPHP/Faker/tree/v1.24.1",
+            "version": "v1.24.1",
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "abandoned": false
+        },
+        {
+            "name": "laravel/boost",
+            "direct-dependency": true,
+            "homepage": "https://github.com/laravel/boost",
+            "source": "https://github.com/laravel/boost",
+            "version": "v2.10.4",
+            "description": "Laravel Boost accelerates AI-assisted development by providing the essential context and structure that AI needs to generate high-quality, Laravel-specific code.",
+            "abandoned": false
+        },
+        {
+            "name": "laravel/framework",
+            "direct-dependency": true,
+            "homepage": "https://laravel.com",
+            "source": "https://github.com/laravel/framework",
+            "version": "v13.40.0",
+            "description": "The Laravel Framework.",
+            "abandoned": false
+        },
+        {
+            "name": "laravel/pail",
+            "direct-dependency": true,
+            "homepage": "https://github.com/laravel/pail",
+            "source": "https://github.com/laravel/pail",
+            "version": "v1.2.7",
+            "description": "Easily delve into your Laravel application's log files directly from the command line.",
+            "abandoned": false
+        },
+        {
+            "name": "laravel/pao",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/laravel/pao",
+            "version": "v1.1.5",
+            "description": "Agent-optimized output for PHP testing tools",
+            "abandoned": false
+        },
+        {
+            "name": "laravel/pint",
+            "direct-dependency": true,
+            "homepage": "https://laravel.com",
+            "source": "https://github.com/laravel/pint",
+            "version": "v1.32.1",
+            "description": "An opinionated code formatter for PHP.",
+            "abandoned": false
+        },
+        {
+            "name": "laravel/sanctum",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/laravel/sanctum",
+            "version": "v4.3.3",
+            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
+            "abandoned": false
+        },
+        {
+            "name": "laravel/tinker",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/laravel/tinker/tree/v3.0.2",
+            "version": "v3.0.2",
+            "description": "Powerful REPL for the Laravel framework.",
+            "abandoned": false
+        },
+        {
+            "name": "mockery/mockery",
+            "direct-dependency": true,
+            "homepage": "https://github.com/mockery/mockery",
+            "source": "https://github.com/mockery/mockery",
+            "version": "1.6.15",
+            "description": "Mockery is a simple yet flexible PHP mock object framework",
+            "abandoned": false
+        },
+        {
+            "name": "nunomaduro/collision",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/nunomaduro/collision",
+            "version": "v8.9.5",
+            "description": "Cli error handling for console/command-line PHP applications.",
+            "abandoned": false
+        },
+        {
+            "name": "phpunit/phpunit",
+            "direct-dependency": true,
+            "homepage": "https://phpunit.de/",
+            "source": "https://github.com/sebastianbergmann/phpunit/tree/12.5.43",
+            "version": "12.5.43",
+            "description": "The PHP Unit Testing framework.",
+            "abandoned": false
+        }
+    ]
+}

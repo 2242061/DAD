@@ -1,0 +1,885 @@
+{
+  "data": "2026-11-05",
+  "php": "8.5.12",
+  "node": "v26.0.0",
+  "npm": "11.12.1",
+  "sqlite_php": "3.54.1",
+  "frontend": {
+    "vue": "3.5.44",
+    "vue-router": "5.4.0",
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "socket.io-client": "4.8.4"
+  },
+  "realtime": {
+    "socket.io": "4.8.4"
+  },
+  "schema": {
+    "users": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "email",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "email_verified_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "password",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "remember_token",
+        "type": "varchar",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "role",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "blocked_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "deleted_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "auth_version",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "rank_points",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      }
+    ],
+    "sessions": [
+      {
+        "name": "id",
+        "type": "varchar",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "ip_address",
+        "type": "varchar",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "user_agent",
+        "type": "TEXT",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "payload",
+        "type": "TEXT",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "last_activity",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      }
+    ],
+    "password_reset_tokens": [
+      {
+        "name": "email",
+        "type": "varchar",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "token",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "audit_logs": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "actor_id",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "target_id",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "action",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "details",
+        "type": "TEXT",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": true,
+        "pk": false
+      }
+    ],
+    "personal_access_tokens": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "tokenable_type",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "tokenable_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "token",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "abilities",
+        "type": "TEXT",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "last_used_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "expires_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "online_games": [
+      {
+        "name": "id",
+        "type": "varchar",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "code",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "white_key",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "black_key",
+        "type": "varchar",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "white_user_id",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "black_user_id",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "phase",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "revision",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "state",
+        "type": "TEXT",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "turn_seconds",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "started_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "turn_deadline_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "finished_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "mode",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "ranked_scored_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "tournament_id",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "tournament_round",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "game_deadline_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "entry_fee",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "discoverable",
+        "type": "tinyint(1)",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "white_seen_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "black_seen_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "rank_entries": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "game_id",
+        "type": "varchar",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "outcome",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "delta",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "previous_points",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "resulting_points",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "tournament_id",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "tournaments": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "creator_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "name",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "status",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "capacity",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "min_rank",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "max_rank",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "round_minutes",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "game_minutes",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "current_round",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "round_started_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "round_deadline_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "finished_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "awarded_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "entry_fee",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "commission_percent",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "site_revenue",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      }
+    ],
+    "tournament_participants": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "tournament_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "entry_points",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "seed",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "wallets": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "balance",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "reserved",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "wallet_transactions": [
+      {
+        "name": "id",
+        "type": "varchar",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "wallet_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "idempotency_key",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "request_hash",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "kind",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "status",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "method",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "reference",
+        "type": "TEXT",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "masked_reference",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "amount_euros",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "exchange_rate",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "fee_bps",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "gross_coins",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "fee_coins",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "net_coins",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "debit_coins",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "gateway_status",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "failure_code",
+        "type": "varchar",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "finished_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "resolved_by",
+        "type": "INTEGER",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "resolution_reason",
+        "type": "TEXT",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "wallet_entries": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "wallet_id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "transaction_id",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "delta",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "previous_balance",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "resulting_balance",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ],
+    "platform_settings": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": true
+      },
+      {
+        "name": "key",
+        "type": "varchar",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "value",
+        "type": "INTEGER",
+        "notnull": true,
+        "pk": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "notnull": false,
+        "pk": false
+      }
+    ]
+  }
+}

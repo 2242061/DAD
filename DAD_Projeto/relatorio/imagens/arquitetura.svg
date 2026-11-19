@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="790" viewBox="0 0 2200 790">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="35" y="270" width="440" height="230" rx="16" fill="#f3f6f8" stroke="#758899" stroke-width="3"/>
+<text x="255" y="336" font-family="Arial,sans-serif" font-size="35" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Navegador</text>
+<text x="255" y="385" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">SPA Vue e Vue Router</text>
+<text x="255" y="434" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Interface do utilizador</text>
+<rect x="615" y="270" width="420" height="230" rx="16" fill="#f3f6f8" stroke="#758899" stroke-width="3"/>
+<text x="825" y="336" font-family="Arial,sans-serif" font-size="35" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Vite</text>
+<text x="825" y="385" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Proxy de desenvolvimento</text>
+<text x="825" y="434" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">127.0.0.1:5173</text>
+<rect x="1235" y="65" width="445" height="245" rx="16" fill="#f3f6f8" stroke="#758899" stroke-width="3"/>
+<text x="1457" y="138" font-family="Arial,sans-serif" font-size="35" text-anchor="middle" dominant-baseline="middle" fill="#192d40">API REST</text>
+<text x="1457" y="187" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Laravel</text>
+<text x="1457" y="236" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">127.0.0.1:8000</text>
+<rect x="1810" y="65" width="360" height="245" rx="16" fill="#f3f6f8" stroke="#758899" stroke-width="3"/>
+<text x="1990" y="138" font-family="Arial,sans-serif" font-size="35" text-anchor="middle" dominant-baseline="middle" fill="#192d40">SQLite</text>
+<text x="1990" y="187" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Ficheiro local</text>
+<text x="1990" y="236" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">database.sqlite</text>
+<rect x="1235" y="520" width="445" height="235" rx="16" fill="#f3f6f8" stroke="#758899" stroke-width="3"/>
+<text x="1457" y="588" font-family="Arial,sans-serif" font-size="35" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Tempo real</text>
+<text x="1457" y="637" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Node.js e Socket.IO</text>
+<text x="1457" y="686" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">127.0.0.1:3001</text>
+<polyline points="475,385 615,385" fill="none" stroke="#486277" stroke-width="4"/>
+<polygon points="615,385 599,375 599,395" fill="#486277"/>
+<polyline points="1035,330 1135,330 1135,190 1235,190" fill="none" stroke="#486277" stroke-width="4"/>
+<polygon points="1235,190 1219,180 1219,200" fill="#486277"/>
+<polyline points="1680,190 1810,190" fill="none" stroke="#486277" stroke-width="4"/>
+<polygon points="1810,190 1794,180 1794,200" fill="#486277"/>
+<polyline points="1035,440 1135,440 1135,635 1235,635" fill="none" stroke="#486277" stroke-width="4"/>
+<polygon points="1235,635 1219,625 1219,645" fill="#486277"/>
+<polyline points="1457,310 1457,520" fill="none" stroke="#486277" stroke-width="4"/>
+<polygon points="1457,520 1447,504 1467,504" fill="#486277"/>
+<text x="1660" y="410" font-family="Arial,sans-serif" font-size="25" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Avisos privados de jogada</text>
+<text x="1100" y="77" font-family="Arial,sans-serif" font-size="27" text-anchor="middle" dominant-baseline="middle" fill="#192d40">/api e /sanctum</text>
+<text x="1750" y="145" font-family="Arial,sans-serif" font-size="27" text-anchor="middle" dominant-baseline="middle" fill="#192d40">SQL</text>
+<text x="1000" y="710" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" dominant-baseline="middle" fill="#192d40">/socket.io</text>
+<text x="615" y="724" font-family="Arial,sans-serif" font-size="25" text-anchor="middle" dominant-baseline="middle" fill="#192d40">Canal Socket.IO das partidas por convite</text>
+</svg>

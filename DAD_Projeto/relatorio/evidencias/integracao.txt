@@ -1,0 +1,4 @@
+Data: 2026-11-05
+Comando: node scripts/check-local.mjs
+Código de saída: 0
+OK: frontend, API, SQLite e WebSocket através do proxy Vite.

@@ -1,0 +1,199 @@
+{
+  "tests": 168,
+  "assertions": 1692,
+  "errors": 0,
+  "failures": 0,
+  "time": 5.791605,
+  "suites": [
+    {
+      "name": "Tests\\Unit\\CheckersEngineTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Unit/CheckersEngineTest.php",
+      "tests": "21",
+      "assertions": "610",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.009005"
+    },
+    {
+      "name": "Tests\\Unit\\ExampleTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Unit/ExampleTest.php",
+      "tests": "1",
+      "assertions": "1",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.000259"
+    },
+    {
+      "name": "Tests\\Feature\\AccountManagementTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/AccountManagementTest.php",
+      "tests": "10",
+      "assertions": "52",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.211103"
+    },
+    {
+      "name": "Tests\\Feature\\AdminAccessTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/AdminAccessTest.php",
+      "tests": "3",
+      "assertions": "12",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.015539"
+    },
+    {
+      "name": "Tests\\Feature\\AuthenticationTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/AuthenticationTest.php",
+      "tests": "13",
+      "assertions": "55",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "1.365013"
+    },
+    {
+      "name": "Tests\\Feature\\CompetitiveRankTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/CompetitiveRankTest.php",
+      "tests": "15",
+      "assertions": "158",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.154311"
+    },
+    {
+      "name": "Tests\\Feature\\CreateAdminTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/CreateAdminTest.php",
+      "tests": "2",
+      "assertions": "9",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.022748"
+    },
+    {
+      "name": "Tests\\Feature\\EmailVerificationTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/EmailVerificationTest.php",
+      "tests": "4",
+      "assertions": "17",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.022293"
+    },
+    {
+      "name": "Tests\\Feature\\ExampleTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/ExampleTest.php",
+      "tests": "1",
+      "assertions": "1",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.005251"
+    },
+    {
+      "name": "Tests\\Feature\\GameClockTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/GameClockTest.php",
+      "tests": "12",
+      "assertions": "57",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.169952"
+    },
+    {
+      "name": "Tests\\Feature\\LocalMailTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/LocalMailTest.php",
+      "tests": "2",
+      "assertions": "6",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.010131"
+    },
+    {
+      "name": "Tests\\Feature\\OnlineGameTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/OnlineGameTest.php",
+      "tests": "15",
+      "assertions": "110",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.127624"
+    },
+    {
+      "name": "Tests\\Feature\\PasswordRecoveryTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/PasswordRecoveryTest.php",
+      "tests": "6",
+      "assertions": "31",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "2.523234"
+    },
+    {
+      "name": "Tests\\Feature\\PlayerHistoryTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/PlayerHistoryTest.php",
+      "tests": "5",
+      "assertions": "35",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.052956"
+    },
+    {
+      "name": "Tests\\Feature\\PracticeGameTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/PracticeGameTest.php",
+      "tests": "7",
+      "assertions": "49",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.039894"
+    },
+    {
+      "name": "Tests\\Feature\\SpectatorTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/SpectatorTest.php",
+      "tests": "2",
+      "assertions": "30",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.018330"
+    },
+    {
+      "name": "Tests\\Feature\\TournamentTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/TournamentTest.php",
+      "tests": "12",
+      "assertions": "222",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.321176"
+    },
+    {
+      "name": "Tests\\Feature\\UserModerationTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/UserModerationTest.php",
+      "tests": "11",
+      "assertions": "51",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.524714"
+    },
+    {
+      "name": "Tests\\Feature\\WalletTest",
+      "file": "/Users/joaoduarte/Desktop/DAD_Projeto/backend/tests/Feature/WalletTest.php",
+      "tests": "26",
+      "assertions": "186",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "0.198072"
+    }
+  ]
+}

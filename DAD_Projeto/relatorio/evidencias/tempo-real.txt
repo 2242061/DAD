@@ -1,0 +1,15 @@
+
+> test
+> node --test test/*.test.js
+
+✔ signed tickets reject tampering, expired access, invalid rooms and wrong audience (1.012292ms)
+✔ only server-authorized rooms receive updates; reconnection joins again (34.213334ms)
+﹣ live Laravel + SQLite + Vite + Socket.IO: competing joins, two players, stale moves and resynchronization (0.678916ms) # SKIP
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 1
+ℹ todo 0
+ℹ duration_ms 170.246542

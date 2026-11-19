@@ -1,0 +1,7 @@
+**/node_modules/
+**/vendor/
+**/dist/
+**/.env
+**/*.sqlite*
+**/.DS_Store
+**/.phpunit.result.cache

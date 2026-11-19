@@ -1,0 +1,15 @@
+{
+  "versao": "0.7",
+  "data": "2026-11-05",
+  "paginas": 15,
+  "ficheiros": {
+    "Relatorio_DAD.pdf": {
+      "bytes": 1289473,
+      "sha256": "f9fc9ab25a87275bf63dbb0fa6bddcc7753792f28fb87cf7eb3abb9673646253"
+    },
+    "Relatorio_DAD.docx": {
+      "bytes": 750408,
+      "sha256": "88126dcbdad693dee321ebc49ed71a769fabb3dfcdb1264b0e170ed9a9197553"
+    }
+  }
+}
