@@ -1,0 +1,5 @@
+deploy/.env.cluster
+**/.env
+**/vendor/
+**/node_modules/
+**/*.sqlite
