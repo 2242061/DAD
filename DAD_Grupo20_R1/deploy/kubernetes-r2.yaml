@@ -1,0 +1,75 @@
+# R2 — adicionar ao Kubernetes existente do grupo 20. NÃO modifica o Deployment/Ingress do R1.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: realtime-r2
+  namespace: dad-group-20
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: realtime-r2
+  template:
+    metadata:
+      labels:
+        app: realtime-r2
+    spec:
+      containers:
+        - name: realtime-r2
+          image: registry-172.22.21.115.sslip.io/dad-group-20/realtime-r2:v1.0.0
+          ports:
+            - containerPort: 3001
+          env:
+            - name: PORT
+              value: "3001"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3001
+            initialDelaySeconds: 3
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3001
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: realtime-r2
+  namespace: dad-group-20
+spec:
+  selector:
+    app: realtime-r2
+  ports:
+    - name: http-ws
+      port: 3001
+      targetPort: 3001
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dad-r2
+  namespace: dad-group-20
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: ws-dad-group-20-172.22.21.253.sslip.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: realtime-r2
+                port:
+                  number: 3001

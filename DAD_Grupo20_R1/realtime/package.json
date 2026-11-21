@@ -1,0 +1,20 @@
+{
+  "name": "dad-grupo20-r2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "R2: servidor de eco WebSocket com Node.js e Socket.IO",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "teste:eco": "node test/teste-eco.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1"
+  }
+}
