@@ -1,0 +1,7 @@
+spec:
+  template:
+    spec:
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: dad-r1-sqlite-v2
